@@ -82,6 +82,14 @@ button:hover {
     padding-left: 70px;
     height: 100vh;
 }
+
+@media (max-width: 767px) {
+    .container-one {
+        background-image: url(img/gestante1.jpg);
+        background-position: 62% 43px;
+        background-size: cover;
+    }
+}
 .intro {
     width: 50%;
 }
@@ -102,6 +110,13 @@ button:hover {
     color: #ffffff;
     text-shadow: 2px 2px 1px #000000;
     text-align: left;
+}
+@media (max-width: 767px) {
+    .intro > h1 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 1.3em;
+    }
 }
 .intro > p {
     color: #ffffff;
@@ -125,6 +140,12 @@ button:hover {
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 767px) {
+    .btn-intro {
+        font-size: 18px;
+    }
+}
+
 .container-two {
     background: #FAF4F4;
     border-radius: 50px;
@@ -137,6 +158,7 @@ button:hover {
 }
 .title-two {
     width: 50%;
+    margin: 25px 0px 0px 0px;
 }
 
 .title-two > h1 {
@@ -149,13 +171,28 @@ button:hover {
     font-family: "Poppins", Sans-serif;
 }
 
+@media (max-width: 767px) {
+    .title-two > h1 {
+        font-size: 18px;
+        line-height: 0.1em;
+    }
+}
+
 .title-two > p {
     font-family: "Poppins", Sans-serif;
     font-size: 40px;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 40px;
     color: #7e5b5c;
-    padding-right: 50px;
+    padding-right: 40px;
+
+}
+
+@media (max-width: 767px) {
+    .title-two > p {
+        font-size: 30px;
+        line-height: 1.3em;
+    }
 }
 
 .text-two {
