@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 
 /*:root {
     color: #7e5b5c;
@@ -23,6 +24,7 @@ header {
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.99);
     padding: 15px 10%;
 }
+
 .logo {
     cursor: pointer;
 }
@@ -71,6 +73,8 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     display: flex;
     align-items: center;
@@ -167,3 +171,77 @@ button:hover {
     padding-bottom: 25px;
 }
 
+.container-three {
+    text-align: center;
+    height: 96vh;
+    background: url(img/gestante5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title-three > h3 {
+    margin-bottom: 4px;
+    color: #7e5b5c;
+    font-family: "Poppins", Sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.title-three > p {
+    font-family: "Open Sans", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.item-three {
+    margin: 5% 46% 0% 2%;
+    padding: 60px 60px 36px 46px;
+    background-color: #FFFFFFD1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8d9ec021;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px 0px rgba(154, 192, 206, 0.25);  
+    
+}
+
+.item-three ul li {
+    list-style-type: none;
+    color: #000000;
+    padding-bottom: 20px;
+}
+.container-four {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    background: #FAF4F4;
+}
+.title-four{
+    width: 50%;
+}
+.title-four > h4 {
+    color: #215387;
+    font-size: 32px;
+}
+.title-four > p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-agendar > a {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    background-color: #7e5b5c;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #ffffffa3;
+    border-radius: 50px;
+    padding: 20px 20px;
+}
+footer {
+    padding: 15px;
+    text-align: center;
+    background: #333;
+}
