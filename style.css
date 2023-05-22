@@ -3,71 +3,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 
-/*:root {
-    color: #7e5b5c;
-    font-family: "Barlow", Sans-serif;
-    font-family: "Open Sans", Sans-serif;
-    font-family: "Poppins", Sans-serif;
-}*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 0 100px;
+    width: 100%;
+    height: 80px;
     background: #333;
-    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.99);
-    padding: 15px 10%;
 }
 
 .logo {
-    cursor: pointer;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-
-}
-nav ul li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-    
-}
-nav li a:hover {
-    color: #0088a9;
-}
-
-li, a, button {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-size: 28px;
+    font-weight: bold;
     color: #edf0f1;
 }
 
-button {
-    padding: 8px 20px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
+.menu {
+    display: none;
+}
+.nav-bar.active {
+    height: 450px;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a {
+    display: block;
+    color: #edf0f1;
+    font-size: 20px;
+    padding: 10px 25px;
     border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: 0.2s;
+    margin: 0 5px;
 }
 
-button:hover {
-    background-color: rgba(0, 136, 169, 0.8); 
+nav li a:hover {
+    color: #0088a9;
+    background-color: #edf0f1;
+}
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
 }
 
+@media screen and (max-width:1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width:900px) {
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+    .menu .line {
+        width: 30px;
+        height: 3px;
+        background-color: #fefefe;
+        margin: 6px 0;
+    }
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #11101b;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
 .container-one {
     background: url(img/gestante1.jpg);
     background-repeat: no-repeat;
@@ -75,14 +138,12 @@ button:hover {
     background-attachment: fixed;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding-left: 70px;
-    height: 100vh;
 }
-
 @media (max-width: 767px) {
     .container-one {
         background-image: url(img/gestante1.jpg);
@@ -90,195 +151,67 @@ button:hover {
         background-size: cover;
     }
 }
-.intro {
-    width: 50%;
+.box-container-one {
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
-.legend {
-    color: #645a41;
+
+.separator {
+    color: #6A5A41;
+    font-family: "Poppins", Sans-serif;
     font-size: 21px;
     font-weight: 400;
-    font-family: "Poppins", Sans-serif;
-    padding: 0px 15px;
 }
-
-.intro > h1 {
-    margin-bottom: 10px;
+.text-one {
+    margin: 0% 50% 0% 0%;
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+}
+.text-one > h3 {
+    margin-bottom: 30px;
+    color: #FFFFFF;
     font-family: "Poppins", Sans-serif;
     font-size: 50px;
     font-weight: 700;
-    color: #ffffff;
+    line-height: 1.1em;
     text-shadow: 2px 2px 1px #000000;
-    text-align: left;
 }
-@media (max-width: 767px) {
-    .intro > h1 {
+@media screen and (max-width: 767px) {
+    .text-one > h3 {
         margin-bottom: 20px;
         font-size: 30px;
         line-height: 1.3em;
-    }
+    }        
 }
-.intro > p {
-    color: #ffffff;
+.text-one > p {
+    color: #FFFFFF;
+    font-family: "Open Sans", Sans-serif;
     font-size: 21px;
     font-weight: 500;
-    font-family: "Open Sans", Sans-serif;
-    padding: 15px 0 30px 0;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.99);
+    margin-bottom: 15px;
 }
 
-.btn-intro {
-    color: #ffffff;
+.btn-one {
+    color: #FFFFFF;
     font-family: "Barlow", Sans-serif;
     font-size: 20px;
     font-weight: 600;
-    background-color: #7e5b5c;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 50px;
-    border-color: #ffffffa3;
-    padding: 10px 18px;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
-}
-
-@media (max-width: 767px) {
-    .btn-intro {
-        font-size: 18px;
-    }
-}
-
-.container-two {
-    background: #FAF4F4;
-    border-radius: 50px;
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    height: 100vh;
-    margin: 30px;
-    padding: 50px;
-}
-.title-two {
-    width: 50%;
-    margin: 25px 0px 0px 0px;
-}
-
-.title-two > h1 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: black;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 0.1em;
-    font-family: "Poppins", Sans-serif;
-}
-
-@media (max-width: 767px) {
-    .title-two > h1 {
-        font-size: 18px;
-        line-height: 0.1em;
-    }
-}
-
-.title-two > p {
-    font-family: "Poppins", Sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 40px;
-    color: #7e5b5c;
-    padding-right: 40px;
-
-}
-
-@media (max-width: 767px) {
-    .title-two > p {
-        font-size: 30px;
-        line-height: 1.3em;
-    }
-}
-
-.text-two {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.7em;
-    font-family: 'Open Sans', sans-serif;
-    width: 50%;
-    text-align: left;
-    padding-top: 40px;
-}
-.text-two > p {
-    padding-bottom: 25px;
-}
-
-.container-three {
-    text-align: center;
-    height: 96vh;
-    background: url(img/gestante5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.title-three > h3 {
-    margin-bottom: 4px;
-    color: #7e5b5c;
-    font-family: "Poppins", Sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.title-three > p {
-    font-family: "Open Sans", Sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.item-three {
-    margin: 5% 46% 0% 2%;
-    padding: 60px 60px 36px 46px;
-    background-color: #FFFFFFD1;
+    background-color: #7e5b5e;
     border-style: solid;
     border-width: 1px;
-    border-color: #8d9ec021;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px 0px rgba(154, 192, 206, 0.25);  
-    
-}
-
-.item-three ul li {
-    list-style-type: none;
-    color: #000000;
-    padding-bottom: 20px;
-}
-.container-four {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 50vh;
-    background: #FAF4F4;
-}
-.title-four{
-    width: 50%;
-}
-.title-four > h4 {
-    color: #215387;
-    font-size: 32px;
-}
-.title-four > p {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.btn-agendar > a {
-    font-family: 'Barlow', sans-serif;
-    font-size: 20px;
-    background-color: #7e5b5c;
-    font-weight: 600;
-    border-style: solid;
-    border-width: 1.5px;
-    border-color: #ffffffa3;
+    border-color: #FFFFFFA3;
     border-radius: 50px;
-    padding: 20px 20px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px 14px;
 }
-footer {
-    padding: 15px;
-    text-align: center;
-    background: #333;
+
+@media screen and (max-width: 385px) {
+    .btn-one {
+        font-size: 12px;
+    }
 }
