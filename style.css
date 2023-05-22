@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*:root {
+    color: #7e5b5c;
+    font-family: "Barlow", Sans-serif;
+    font-family: "Open Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.99);
+    padding: 15px 10%;
+}
+.logo {
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+
+}
+nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    
+}
+nav li a:hover {
+    color: #0088a9;
+}
+
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8); 
+}
+
+.container-one {
+    background: url(img/gestante1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 70px;
+    height: 100vh;
+}
+.intro {
+    width: 50%;
+}
+
+.legend {
+    color: #645a41;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Poppins", Sans-serif;
+    padding: 0px 15px;
+}
+
+.intro > h1 {
+    margin-bottom: 10px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px #000000;
+    text-align: left;
+}
+.intro > p {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: "Open Sans", Sans-serif;
+    padding: 15px 0 30px 0;
+}
+
+.btn-intro {
+    color: #ffffff;
+    font-family: "Barlow", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #7e5b5c;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50px;
+    border-color: #ffffffa3;
+    padding: 10px 18px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container-two {
+    background: #FAF4F4;
+    border-radius: 50px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    height: 100vh;
+    margin: 30px;
+    padding: 50px;
+}
+.title-two {
+    width: 50%;
+}
+
+.title-two > h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 0.1em;
+    font-family: "Poppins", Sans-serif;
+}
+
+.title-two > p {
+    font-family: "Poppins", Sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #7e5b5c;
+    padding-right: 50px;
+}
+
+.text-two {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7em;
+    font-family: 'Open Sans', sans-serif;
+    width: 50%;
+    text-align: left;
+    padding-top: 40px;
+}
+.text-two > p {
+    padding-bottom: 25px;
+}
+
