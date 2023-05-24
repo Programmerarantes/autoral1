@@ -315,3 +315,71 @@ nav li a:hover {
         font-size: 12px;
     }
 }
+
+.container-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DBB4B4BF;
+    height: 100vh;
+}
+@media screen and (max-width: 767px) {
+    .container-two {
+        display: block;
+    }
+}
+
+.intro-two {
+    text-align: left;
+    width: 100%;
+    margin: 30px 20px 11px 50px;
+}
+@media (max-width: 767px) {
+    .intro-two {
+        margin: 0px 20px 0px 10px;
+        width: 50%;
+    }
+}
+.intro-two > h1 {
+    margin-bottom: 28px;
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 0.1em;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .intro-two {
+        font-size: 18px;
+    }
+}
+
+.intro-two > p {
+    color: #7e5b5e;
+    font-family: "Poppins", Sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+@media (max-width: 767px) {
+    .intro-two > p {
+        font-size: 30px;
+        line-height: 1.3em;
+    }
+}
+
+.box-description-two {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7em;
+    padding: 10px;
+}
+
+.box-description-two > p {
+    margin: 18px 0;
+}
+
