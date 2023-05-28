@@ -317,19 +317,75 @@ nav li a:hover {
 }
 
 .container-two {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #DBB4B4BF;
-    height: 100vh;
+    display: grid;
+    height: 100%;
+    background-color: #D9E4DE;
+    grid-template-areas:
+        ". . . . . ."
+        ". intro . . desc . "
+        ". intro . . desc . "
+        ". . . . . ."
+    ;
+    gap: 20px;
+    border-radius: 15px;
 }
 @media screen and (max-width: 767px) {
     .container-two {
         display: block;
     }
 }
-
 .intro-two {
+    grid-area: intro;
+    margin: 20px 0 20px 0;
+}
+.box-description-two {
+    grid-area: desc;
+}
+.intro-two h1{
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .intro-two h1 {
+        font-size: 30px;
+    }
+}
+
+.intro-two p {
+    display: flex;
+    color: #7e5b5e;
+    font-family: "Poppins", Sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    margin: 0 40px;
+}
+
+@media (max-width:767px) {
+    .intro-two p {
+        font-size: 25px;
+    }
+}
+.box-description-two {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7em;
+    padding: 10px;
+}
+.box-description-two > p {
+    margin: 18px 0;
+}
+
+
+
+ /*.intro-two {
     text-align: left;
     width: 100%;
     margin: 30px 20px 11px 50px;
@@ -338,6 +394,11 @@ nav li a:hover {
     .intro-two {
         margin: 0px 20px 0px 10px;
         width: 50%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .container-two {
+        display: block;
     }
 }
 .intro-two > h1 {
@@ -382,4 +443,4 @@ nav li a:hover {
 .box-description-two > p {
     margin: 18px 0;
 }
-
+*/
