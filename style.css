@@ -142,95 +142,6 @@ a:hover {
     }
 }
 
-
-/* header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 100px;
-    width: 100%;
-    height: 80px;
-    background: #333;
-}
-
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #edf0f1;
-}
-
-.menu {
-    display: none;
-}
-.nav-bar.active {
-    height: 450px;
-}
-.nav-bar ul{
-    display: flex;
-}
-.nav-bar ul li a {
-    display: block;
-    color: #edf0f1;
-    font-size: 20px;
-    padding: 10px 25px;
-    border-radius: 50px;
-    transition: 0.2s;
-    margin: 0 5px;
-}
-
-nav li a:hover {
-    color: #0088a9;
-    background-color: #edf0f1;
-}
-@media only screen and (max-width: 1320px) {
-    header {
-        padding: 0 50px;
-    }
-}
-
-@media screen and (max-width:1100px) {
-    header {
-        padding: 0 30px;
-    }
-}
-@media screen and (max-width:900px) {
-    .menu {
-        display: block;
-        cursor: pointer;
-    }
-    .menu .line {
-        width: 30px;
-        height: 3px;
-        background-color: #fefefe;
-        margin: 6px 0;
-    }
-    .nav-bar {
-        height: 0px;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background-color: #11101b;
-        transition: 0.5s;
-        overflow: hidden;
-    }
-    .nav-bar ul {
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
-    }
-    .nav-bar.active ul {
-        opacity: 1;
-    }
-    .nav-bar ul li a {
-        margin-bottom: 12px;
-    }
-}
-*/
 .container-one {
     background: url(img/gestante1.jpg);
     background-repeat: no-repeat;
@@ -380,67 +291,82 @@ nav li a:hover {
     padding: 10px;
 }
 .box-description-two > p {
-    margin: 18px 0;
+    margin: 18px 18px;
 }
-
-
-
- /*.intro-two {
+.container-three {
+    background-color: #f0f1f4;
+    background-image: url(img/gestante5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    height: 80vh;
+    padding: 150px;
+    border-radius: 15px;
+}
+@media (max-width:767px) {
+    .container-three {
+        padding: 50px;
+        height: 100%;
+    }
+}
+.box-container-three {
+    display: flex;
+    align-items: center;
     text-align: left;
-    width: 100%;
-    margin: 30px 20px 11px 50px;
+    justify-content: center;
+    background-color: #FFFFFFDE;
+    border-radius: 15px;
+    padding: 30px;
 }
-@media (max-width: 767px) {
-    .intro-two {
-        margin: 0px 20px 0px 10px;
-        width: 50%;
-    }
-}
-@media screen and (max-width: 767px) {
-    .container-two {
+@media (max-width:767px) {
+    .box-container-three {
         display: block;
+        padding: 15px;
     }
 }
-.intro-two > h1 {
-    margin-bottom: 28px;
-    color: #000000;
+.intro-three {
+    padding: 30px;
+}
+.intro-three h4{
+    color: #215387;
+    line-height: 1;
     font-family: "Poppins", Sans-serif;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 0.1em;
-    flex-wrap: wrap;
+    margin-bottom: 15px;
 }
-
-@media (max-width: 767px) {
-    .intro-two {
-        font-size: 18px;
-    }
-}
-
-.intro-two > p {
-    color: #7e5b5e;
-    font-family: "Poppins", Sans-serif;
-    font-size: 42px;
-    font-weight: 600;
-    line-height: 50px;
-}
-
-@media (max-width: 767px) {
-    .intro-two > p {
-        font-size: 30px;
-        line-height: 1.3em;
-    }
-}
-
-.box-description-two {
-    color: #000000;
+.btn-three{
+    text-align: center;
+    font-family: "Barlow", Sans-serif;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 1.7em;
-    padding: 10px;
+    color: #FFFFFF;
+    font-weight: 600;
+    background-color: #7e5b5e;
+    border-radius: 50px;
+    padding: 20px 30px;
+}
+@media (max-width: 767px){
+    .btn-three {
+        padding: 20px 15px;
+        margin: 0px 120px;
+    }
+}
+@media (max-width: 528px) {
+    .btn-three {
+        margin: auto;
+    }
 }
 
-.box-description-two > p {
-    margin: 18px 0;
+.btn-three a{
+    color: #FFFFFF;
 }
-*/
+
+footer {
+    background-color: #C0CFC8;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+footer a {
+    color: #215387;
+}
