@@ -465,7 +465,15 @@ a:hover {
 }
 
 .img-six {
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-six img {
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
 }
 
 .para-six {
@@ -473,7 +481,7 @@ a:hover {
 }
 .para-six p {
     margin: 0 10px;
-    text-align: justify;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
     
 }
@@ -490,6 +498,16 @@ a:hover {
     color: #FFFFFF;
     padding: 20px;
 }
+#container-seven {
+    background: #785659;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+}
+
 footer {
     background: #e7e7e7;
     padding: 20px;
