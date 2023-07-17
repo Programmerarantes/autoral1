@@ -368,7 +368,7 @@ a:hover {
     color: #FFFFFF;
     padding: 20px;
 }
-.container-four {
+#container-four {
     display: grid;
     place-content: center;
     height: auto;
@@ -409,7 +409,7 @@ a:hover {
     line-height: 1.4em;
 }
 
-.container-five {
+#container-five {
     background: #FFFFFF url("img/gestante2.jpg") no-repeat center;
     background-size: cover;
     height: auto;
@@ -429,7 +429,66 @@ a:hover {
     margin: 5px 0;
     font-size: 18px;
     font-weight: 400;
+}
+#container-six {
+
+}
+
+.yoga-casal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-six {
     text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.intro-six h3 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 28px;
+    line-height: 1.2em;
+    color: #7e5b5e;
+}
+.intro-six p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5px;
+}
+.text-six {
+    display: grid;
+    grid-template-columns: 50% 2fr;
+    margin: 25px;
+}
+
+.img-six {
+    align-content: center;
+}
+
+.para-six {
+    line-height: 3em;
+}
+.para-six p {
+    margin: 0 10px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.btn-six {
+    font-family: "Barlow", Sans-serif;
+    font-size: 15px;
+    background-color: #7e5b5e;
+    border-radius: 40px;
+    margin: 15px;
+}
+.btn-six a{
+    display: inline-block;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
 }
 footer {
     background: #e7e7e7;
